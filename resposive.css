@@ -1,0 +1,65 @@
+@media screen and (max-width:810px) and (min-width:660px) {
+    html{
+        font-size: 70%;
+    }
+}
+@media screen and (max-width:660px) and (min-width:520px) {
+    html{
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:520px) and (min-width:450px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:450px) and (min-width:358px) {
+    html{
+        font-size: 50%;
+    }
+    #message{
+        font-size: 3rem;
+    }
+    .mode,.playerName{
+        font-size: 2rem;        
+    }      
+    /* playername as well as mode styling  */
+    .playerName input,.mode select{
+        font-size: 1.7rem;
+        border-radius: 0.6rem;
+      }
+      
+    .btn{
+          font-size: 1.7rem;
+          margin: 2rem;
+    }
+    .box{
+        width: 12rem;
+        height:11rem;
+    } 
+}
+@media screen and (max-width:358px) and (min-width:0px) {
+    html{
+        font-size: 45%;
+    }
+    #message{
+        font-size: 2.8rem;
+    }
+    .mode,.playerName{
+        font-size: 2rem;        
+    }      
+    /* playername as well as mode styling  */
+    .playerName input,.mode select{
+        font-size: 1.7rem;
+        border-radius: 0.6rem;
+      }
+      
+    .btn{
+          font-size: 1.7rem;
+          margin: 2rem;
+    }
+    .box{
+        width: 12rem;
+        height:11rem;
+    }
+}

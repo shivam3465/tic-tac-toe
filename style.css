@@ -1,0 +1,181 @@
+*{margin: 0;padding: 0;}
+
+  /* TOOLS FOR STYLING */
+
+/* themes */
+.theme1 {
+  color: white;
+  text-shadow: 0.38rem 0rem 0.25rem rgb(217 36 175), -0.32rem 0rem 0.44rem rgb(233 9 143);
+}
+
+.theme2 {
+  color: white;
+  text-shadow: 0.38rem 0rem 0.57rem rgb(228 253 24), 0.38rem 0rem 29px red, -0.25rem 0rem 0.63rem rgb(223 168 14);
+}
+
+.theme3 {
+  color: white;
+  text-shadow:0.32rem 0rem 0.57rem rgb(253 24 98), 0.38rem 0rem 1.81rem red, -7px 0rem 0.69rem rgb(14 78 223);
+}
+.theme4{
+  color: white;
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 0.1rem 0rem 0.3rem rgb(0, 255, 221),0.2rem 0rem 0.2rem rgb(26, 180, 108);
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden{
+  display: none;
+}
+.invisible{
+  visibility: collapse;
+}
+.resetDisplay{
+  display: flex;
+  visibility: visible;
+}
+
+/* variables  */
+:root{
+  --color:rgb(101 182 213);
+}
+
+body {
+  background-color: rgb(32 36 50);
+}
+
+/* navbar */
+nav{
+  border-bottom: 0.23rem solid white;
+  box-shadow: 0rem -0.2rem 0.7rem rgb(209 214 231) inset, 0rem 0.2rem 0.7rem rgb(209 214 231) inset;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  background-color: rgb(3, 3, 22);
+}
+
+/* message  */
+#message{
+  font-size: 3.1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: oblique;
+  margin: 2rem;
+  white-space: pre;
+}
+
+  /* mode styling */
+.mode,.playerName{
+  font-size: 1.7rem;
+  margin: 0.8rem 0rem;
+}
+
+/* playername as well as mode styling  */
+.playerName input,.mode select{
+  font-size: 1.1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.4rem;
+}
+
+/* game container  */
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header{
+  justify-content: space-around;
+  font-size: 2rem;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+.active{
+  box-shadow:0rem 0rem 0.7rem rgb(193, 226, 9), 0rem 0rem 1.2rem rgb(7, 193, 240),
+  0rem 0rem 1.4rem rgb(14, 235, 147),0rem 0rem 1.5rem rgb(14, 240, 134);
+  border: 0.2rem solid rgba(255, 255, 0, 0.71);
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.2rem;
+}
+.winner{
+  background-color: rgba(56, 253, 227, 0.925);
+}
+.boxSection{
+  display: flex;
+  align-items: center;  
+}
+
+.box {
+  border: 2px solid rgb(203, 217, 233);
+  width: 10rem;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  box-shadow: none;    
+}
+
+/* box-shadow:x-axis y-axis spread color */
+#box-1{
+   box-shadow: -0.3rem -0.3rem 0.4rem  var(--color) inset;
+   border-top:none;
+   border-left: none;
+}
+#box-2{
+   box-shadow:  0.3rem -0.3rem 0.4rem  var(--color) inset,
+   -0.3rem -0.3rem 0.4rem  var(--color) inset;
+   border-top:none;
+}
+#box-3{
+   box-shadow: 0.3rem -0.3rem 0.4rem  var(--color) inset;
+   border-top:none;
+   border-right: none;
+}
+#box-4{
+   box-shadow: -0.3rem -0.3rem 0.4rem  var(--color) inset,
+   -0.3rem 0.3rem 0.4rem  var(--color) inset;
+   border-left: none;
+}
+#box-5{
+   box-shadow: -0.3rem -0.3rem 0.4rem  var(--color) inset,
+   0.3rem 0.3rem 0.4rem  var(--color) inset;   
+}
+#box-6{
+   box-shadow: 0.3rem -0.3rem 0.4rem  var(--color) inset,
+   0.3rem 0.3rem 0.4rem  var(--color) inset;
+   border-right: none;
+}
+#box-7{
+   box-shadow: -0.3rem 0.3rem 0.4rem  var(--color) inset;
+   border-bottom:none;
+   border-left: none;
+}
+#box-8{
+   box-shadow: 0.3rem 0.3rem 0.4rem  var(--color) inset,
+   -0.3rem 0.3rem 0.4rem  var(--color) inset;
+   border-bottom:none;
+}
+#box-9{
+   box-shadow: 0.3rem 0.3rem 0.4rem  var(--color) inset;
+   border-bottom:none;
+   border-right: none;
+}
+
+
+
+/* button styling */
+.btn{
+  margin: 1rem 0.5rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.3rem;
+  background-color: rgb(80 3 21);
+  border-width: 0.2rem;  
+  border-color: rgb(148, 9, 21);
+  border-radius: 0.5rem;
+  box-shadow: 0rem -0.2rem 0.5rem white inset;
+  font-weight: 700;
+}

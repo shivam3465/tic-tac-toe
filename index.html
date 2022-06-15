@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resposive.css">
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+  <nav>
+    <!-- game title  -->
+    <div class="flex theme3">Tic Tac Toe </div>
+  </nav>
+
+  <!-- message boxSection  -->
+  <h1 class="flex theme2" id="message">~ </h1>
+
+  <!-- mode selection -->
+   <div class="mode flex theme4 " id="modeSection">
+     <label for="mode" onclick="modeSetter()">Select&nbsp; Mode: &nbsp;</label>
+    <select name="mode" id="Mode" onchange="modeSelector()">
+      <option value="default">Choose the mode</option>
+      <option value="computer">Play with computer</option>
+      <option value="friend">Play with friend.</option>
+    </select>
+   </div>
+
+  <!-- player name is taken -->
+  <div class="flex playerName theme1 " id="Player1">
+     <label for="player1">Player1:&nbsp;</label>
+     <input type="text" id="player1" placeholder="enter the name">
+  </div>
+  <div class="flex playerName theme1 " id="Player2">
+     <label for="player2">Player2:&nbsp;</label>
+     <input type="text" id="player2" placeholder="enter the name">
+    </div>
+    <!-- enter button  -->
+    <div class="flex" id="enter-name">
+      <button class="btn theme3" onclick="saveName()">Enter</button>
+    </div>
+   
+  <!-- main game container  -->
+  <div class="gameContainer theme3" id="gameContainer">
+    
+    <div id="header" class="flex">
+      <div id="name1" class="active">Player 1:</div>
+      <div id="name2" class="">Player 2:</div>
+    </div>
+
+      <div class="boxSection">
+        <div class="box" id="box-1" onclick="mark(1)"></div>
+        <div class="box" id="box-2" onclick="mark(2)"></div>
+        <div class="box" id="box-3" onclick="mark(3)"></div>
+      </div>
+
+      <div class="boxSection">
+        <div class="box" id="box-4" onclick="mark(4)"></div>
+        <div class="box" id="box-5" onclick="mark(5)"></div>
+        <div class="box" id="box-6" onclick="mark(6)"></div>
+      </div>
+
+      <div class="boxSection">
+        <div class="box" id="box-7" onclick="mark(7)"></div>
+        <div class="box" id="box-8" onclick="mark(8)"></div>
+        <div class="box" id="box-9" onclick="mark(9)"></div>
+      </div>
+  </div>
+  
+  <!-- start buttons and restart button  -->
+  <div class="flex" id="game-controller">
+    <button id="startGame" class="btn theme3" onclick="stopbg()">Stop Music</button>
+    <button id="restartGame" class="btn theme2" onclick="restart()">Restart Game</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
